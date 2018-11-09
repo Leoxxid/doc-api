@@ -15,7 +15,7 @@ Faça o clone do projeto:
 ```git clone https://github.com/Leoxxid/doc-api.git```
 
 Instale as gems:  
-``` bundle isntall ```
+``` bundle install ```
 
 Crie o banco de dados:  
 ``` rails db:create ```
