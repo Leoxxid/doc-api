@@ -23,5 +23,5 @@ Crie o banco de dados:
 Execute as migrations:  
 ``` rails db:migrate ```
 
-Popular o banco de dados:  
+Popule o banco de dados:  
 ``` rails db:seed ```
