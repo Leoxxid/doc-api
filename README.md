@@ -1,24 +1,27 @@
-# README
+# Doc Api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto é uma API utilizada como exemplo em um post do OneBitCode que ensina como documentar uma API utilizando o software Postman.
+A seguir veja as dependências deste projeto e o passo a passo de como configurá-lo.
 
-Things you may want to cover:
+## Dependências:
 
-* Ruby version
+* Ruby 2.5.1
 
-* System dependencies
+* Rails 5.2.1
 
-* Configuration
+## Configurações
 
-* Database creation
+Faça o clone do projeto:  
+```git clone https://github.com/Leoxxid/doc-api.git```
 
-* Database initialization
+Instale as gems:  
+``` bundle isntall ```
 
-* How to run the test suite
+Crie o banco de dados:  
+``` rails db:create ```
 
-* Services (job queues, cache servers, search engines, etc.)
+Execute as migrations:  
+``` rails db:migrate ```
 
-* Deployment instructions
-
-* ...
+Popular o banco de dados:  
+``` rails db:seed ```
