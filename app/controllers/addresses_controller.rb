@@ -17,13 +17,14 @@ class AddressesController < ApplicationController
 
   # DELETE /addresses/1
   def destroy
+    p @address
     @address.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_address
-      @address = Address.where(user_id: params[:user_id])
+      @address = Address.find_by(user_id: params[:user_id])
     end
 
     # Only allow a trusted parameter "white list" through.
