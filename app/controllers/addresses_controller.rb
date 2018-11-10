@@ -17,8 +17,12 @@ class AddressesController < ApplicationController
 
   # DELETE /addresses/1
   def destroy
-    p @address
-    @address.destroy
+    if @address
+      @address.destroy
+    else
+      error = "Record don't exists".to_json
+      render json: { error: error }, status: :not_found
+    end
   end
 
   private
